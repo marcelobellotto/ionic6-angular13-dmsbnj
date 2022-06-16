@@ -1,0 +1,19 @@
+p {
+  font-family: Lato;
+}
+
+ion-row {
+  height: 33vh;
+}
+
+.first {
+  background-color: blueviolet;
+}
+
+.second {
+  background-color: coral;
+}
+
+.third {
+  background-color: lime;
+}
