@@ -2,13 +2,31 @@
   <ion-content>
     <ion-grid>
       <ion-row class="first">
-        <ion-col class="ion-align-self-center ion-text-center"> Primera fila </ion-col>
+        <ion-col class="ion-align-self-center ion-text-center">
+          <div *ngIf="actionStarted">
+            La aplicación necesita configurarse. Aguarde mientras ejecutamos el
+            proceso.
+          </div>
+          <div *ngIf="actionCompleted">
+            La actualización finalizo con éxito. Ahora podrá disfrutar de la
+            aplicación.
+          </div>
+        </ion-col>
       </ion-row>
       <ion-row class="second">
-        <ion-col class="ion-align-self-center ion-text-center"> Segunda Fila </ion-col>
+        <ion-col class="ion-align-self-center ion-text-center"></ion-col>
       </ion-row>
       <ion-row class="third">
-        <ion-col class="ion-align-self-center ion-text-center"> Tercera Fila </ion-col>
+        <ion-col class="ion-align-self-center ion-text-center">
+          <div *ngIf="spinnerActive">
+            <ion-spinner
+              name="dots"
+              class="update-spinner ion-align-items-center"
+            >
+            </ion-spinner>
+            <span>Aguarde</span>
+          </div>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </ion-content>

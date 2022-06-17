@@ -1,19 +1,44 @@
 p {
   font-family: Lato;
 }
+ion-content {
+  --background: url('https://iconape.com/wp-content/png_logo_vector/apple-photos-logo.png')  no-repeat fixed center;
+}
+
+.bg-image {
+  background-image: url('https://iconape.com/wp-content/png_logo_vector/apple-photos-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 ion-row {
   height: 33vh;
 }
 
 .first {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  background-color: transparent;
 }
 
 .second {
-  background-color: coral;
+  /* background-color: coral; */
+  background-color: transparent;
 }
 
 .third {
-  background-color: lime;
+  /* background-color: lime; */
+  background-color: transparent;
+}
+
+ion-spinner {
+  transform: scale(2);
+}
+
+.update-spinner {
+  --color: #4990ac;
+  height: 50px;
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
 }
